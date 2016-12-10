@@ -4,7 +4,7 @@ go-webkit2 provides [Go](http://golang.org) bindings for the
 [WebKitGTK+ 2 API](http://webkitgtk.org/reference/webkit2gtk/stable/index.html). It permits headless operation of WebKit
 as well as embedding a WebView in a GTK+ application.
 
-* [Documentation on Sourcegraph](https://sourcegraph.com/github.com/sourcegraph/go-webkit2/tree)
+* [Documentation on Sourcegraph](https://sourcegraph.com/github.com/kmanley/go-webkit2/tree)
 
 ## Requirements
 
@@ -57,7 +57,7 @@ import (
 	"fmt"
 	"github.com/conformal/gotk3/glib"
 	"github.com/conformal/gotk3/gtk"
-	"github.com/sourcegraph/go-webkit2/webkit2"
+	"github.com/kmanley/go-webkit2/webkit2"
 	"github.com/sqs/gojs"
 	"runtime"
 )
@@ -106,7 +106,7 @@ func Example() {
 ```
 
 See the
-[documentation](https://sourcegraph.com/github.com/sourcegraph/go-webkit2) and
+[documentation](https://sourcegraph.com/github.com/kmanley/go-webkit2) and
 the test files for usage information and examples.
 
 For more information about the underlying WebKitGTK+ 2 API, refer to the
@@ -119,7 +119,7 @@ The included `webkit-eval-js` program runs the contents of a JavaScript file in 
 a web page. Run with:
 
 ```
-$ go get -tags gtk_3_10 github.com/sourcegraph/go-webkit2/webkit-eval-js
+$ go get -tags gtk_3_10 github.com/kmanley/go-webkit2/webkit-eval-js
 $ webkit-eval-js https://example.com scriptfile.js
 ```
 
@@ -158,7 +158,7 @@ go test ./webkit2
 
 * Implement more of the WebKitGTK+ 2 API. Right now, only certain parts of it
   are implemented.
-* [Set up CI testing.](https://github.com/sourcegraph/go-webkit2/issues/1) This
+* [Set up CI testing.](https://github.com/kmanley/go-webkit2/issues/1) This
   is difficult because all of the popular CI services run older versions of
   Ubuntu that make it difficult to install WebKitGTK+ >= 2.0.0.
 * Create example applications.

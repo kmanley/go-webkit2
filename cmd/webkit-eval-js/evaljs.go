@@ -11,7 +11,7 @@ import (
 
 	"github.com/gotk3/gotk3/glib"
 	"github.com/gotk3/gotk3/gtk"
-	"github.com/sourcegraph/go-webkit2/webkit2"
+	"github.com/kmanley/go-webkit2/webkit2"
 	"github.com/sqs/gojs"
 )
 
@@ -33,7 +33,7 @@ func main() {
 		fmt.Fprintf(os.Stderr, "Notes:\n\n")
 		fmt.Fprintf(os.Stderr, "\tBecause a headless WebKit instance is used, your $DISPLAY must be set. Use\n")
 		fmt.Fprintf(os.Stderr, "\tXvfb if you are running on a machine without an existing X server. See\n")
-		fmt.Fprintf(os.Stderr, "\thttps://sourcegraph.com/github.com/sourcegraph/go-webkit2/readme for more info.\n")
+		fmt.Fprintf(os.Stderr, "\thttps://sourcegraph.com/github.com/kmanley/go-webkit2/readme for more info.\n")
 		fmt.Fprintln(os.Stderr)
 		os.Exit(1)
 	}
